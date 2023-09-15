@@ -23,7 +23,7 @@ docker run -d -p 8080:8080 \
     -e SSPASSWORD_ADMIN_DN=cn=admin,dc=example,dc=org \
     -e SSPASSWORD_ADMIN_PASSWORD=password \
     -e SSPASSWORD_USER_BASE_DN=ou=users,dc=example,dc=org
-    philskat/self-service-password:latest
+    thedarkmen3000/self-service-password:latest
 ```
 
 You can also put the configuration into a config file and mount the config to the container:
@@ -41,7 +41,7 @@ user_base_dn = 'ou=users,dc=example,dc=org'
 ```
 docker run -d -p 8080:8080 \
   -v ./config.toml:/etc/self-service-password/config.toml:ro \
-  philskat/self-service-password:latest
+  thedarkmen3000/self-service-password:latest
 ```
 
 ### Bare Metal
