@@ -1,3 +1,5 @@
+[![CI](https://github.com/philskat/self-service-password/actions/workflows/ci.yml/badge.svg)](https://github.com/philskat/self-service-password/actions/workflows/ci.yml)
+
 # Self Service Password
 
 A small web application to allow your users to change there own password of an LDAP-server.
