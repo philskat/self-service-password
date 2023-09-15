@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Self Service Password</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Self Service Password</h2>
+    </header>
+
+    <main>
+      <form action="/reset" method="post" id="password_change">
+        <label for="username">Username</label>
+        <input type="text" name="username" required />
+
+        <label for="currentPass">Current Password</label>
+        <input type="password" name="currentPass" required />
+
+        <label for="newpass">New Password</label>
+        <input type="password" name="newpass" required />
+
+        <label for="newpass_repeat">Repeate New Password</label>
+        <input type="password" name="newpass_repeat" required />
+
+        <input type="submit" value="Set password" id="submit" class="primary" style="margin-top: 12px" />
+
+        <p id="message"></p>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+  --background: #FDFDFD;
+  --primary-color: #FF0000;
+  --on-primary: #FDFDFD;
+}
+
+body {
+  background-color: var(--background);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  background-color: var(--primary-color);
+  color: var(--on-primary);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 12px;
+  padding: 0px 6px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input[type=text], input[type=password] {
+  height: 32px;
+  padding: 3px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-size: 12pt;
+}
+
+input[type=submit], button {
+  background-color: var(--background);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  height: 32px;
+}
+
+input[type=submit].primary, button.primary {
+  background-color: var(--primary-color);
+  color: var(--on-primary);
+}
+
+input[type=submit]:hover, button:hover {
+  filter: brightness(85%);
+}
+
+input[type=submit]:active, button:active {
+  filter: brightness(90%); 
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+label {
+  font-size: 11pt;
+}
+
